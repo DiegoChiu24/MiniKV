@@ -1,0 +1,36 @@
+HELP
+CHECK
+SET usuario001 Diego
+SET cantidad 20
+SET precio 19.50
+SET activo true
+SET texto "20"
+SET producto001 Teclado mecanico
+GET cantidad
+GET precio
+GET activo
+GET texto
+GET producto001
+STATS
+SET usuario001 Carlos NX
+GET usuario001
+SET usuario001 Carlos
+GET usuario001
+SET temporal "expira luego" EX 20
+TTL temporal
+SET temporal permanente
+TTL temporal
+SET temporal2 caduca EX 2 NX
+EXPIRE temporal2 0
+TTL temporal2
+EXISTS temporal2
+EXPIRE ausente 2
+DEL temporal
+TTL temporal
+COUNT a z
+PREFIX "" LIMIT 10
+RANGE a z LIMIT 10
+CHECK
+HASHINFO
+STATS
+EXIT

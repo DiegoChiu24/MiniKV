@@ -1,0 +1,31 @@
+HELP
+CHECK
+SET usuario003 Carlos
+SET usuario001 Diego
+SET usuario002 Andrea
+SET producto001 Teclado mecanico
+SET usuario010 Laura
+CHECK
+GET usuario002
+RANGE usuario001 usuario010
+RANGE usuario001 usuario010 LIMIT 2
+COUNT usuario001 usuario010
+PREFIX usuario
+PREFIX usuario LIMIT 3
+PREFIX "" LIMIT 2
+SUCCESSOR usuario002
+PREDECESSOR usuario002
+MIN
+MAX
+DUMP LIMIT 10
+SET usuario002 Beatriz
+GET usuario002
+CHECK
+DEL usuario002
+EXISTS usuario002
+GET usuario002
+COUNT usuario001 usuario010
+RANGE usuario001 usuario010
+CHECK
+HASHINFO
+EXIT
